@@ -60,6 +60,7 @@ body{
     background-color: transparent;
     pointer-events: painted;
     border-style: none;
+    display: block;
 
 }
 .btn-output{
@@ -70,6 +71,7 @@ body{
     background-color: transparent;
     pointer-events: painted;
     border-style: none;
+    display: block;
 }
 
 footer{
