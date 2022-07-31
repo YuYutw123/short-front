@@ -14,14 +14,14 @@ async function enterValue(value) {
 }
   console.log(str.longUrl);
 
-  fetch ("http://short-yuyu.ddns.net:5000/api/url/shorten", {
+  fetch ("http://localhost:5000/api/url/shorten", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(str)
   }).then(function(response){
     return response.json();
   }).then(function(response){
-    let result = document.getElementById('output').value = response.shortUrl;
+    let result = document.getElementById('output-bar').value = response.shortUrl;
   })
   .catch(function(error){
     console.log('Error during fetch: ' + error.message);
@@ -30,7 +30,7 @@ async function enterValue(value) {
 }
 
 function copyInput() {
-  var copyText = document.getElementById("output");
+  var copyText = document.getElementById("output-bar");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");

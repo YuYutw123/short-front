@@ -30,15 +30,25 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-sm-12" id="middle">
+                <div class="input-box">
+                    <input type="text" id="input-bar" placeholder="請輸入連結..." line-height="50px" line-width="50px" />
+                    <button class="btn-input" onclick="enterValue()">輸入</button>
+                </div>
             </div>
-            <div class="col-md-8" id="middle">
-                input
-            </div>
-            <div class="col-md-2">
+            <div class="col-sm-12" id="middle">
+                <div class="input-box">
+                    <input type="text" id="output-bar" placeholder="" line-height="50px" line-width="50px" value="" />
+                    <button class="btn-output" onclick="copyInput()">複製</button>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <p>
+            Thanks for using.
+        </p>
+    </footer>
 
 
     <!--Scripts-->

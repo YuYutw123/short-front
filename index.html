@@ -29,26 +29,26 @@
 
 <body>
     <div class="container">
-        <div class="row row-cols-1">
-            <div class="col">
+        <div class="row">
+            <div class="col-sm-12" id="middle">
                 <div class="input-box">
-                    <button class="btn-input" onclick="enterValue()">輸入</button>
                     <input type="text" id="input-bar" placeholder="請輸入連結..." line-height="50px" line-width="50px" />
+                    <button class="btn-input" onclick="enterValue()">輸入</button>
                 </div>
             </div>
-        </div>
-        <div class="row row-cols-1">
-            <div class="col">
+            <div class="col-sm-12" id="middle">
                 <div class="input-box">
-                    <button class="btn-input" onclick="copyInput()">複製</button>
-                    <input type="text" id="output" placeholder="" line-height="50px" line-width="50px" value="" />
+                    <input type="text" id="output-bar" placeholder="" line-height="50px" line-width="50px" value="" />
+                    <button class="btn-output" onclick="copyInput()">複製</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer-text">
-        <p>Thanks for using.</p>
-    </div>
+    <footer>
+        <p>
+            Thanks for using.
+        </p>
+    </footer>
 
 
     <!--Scripts-->
