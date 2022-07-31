@@ -8,7 +8,7 @@
     <!--Main-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>縮網址 Shorten_Urls</title>
+    <title>縮網址byYuYu</title>
     <meta name="description" content="A sideproject." />
     <meta property="og:title" content="YuYu的奇怪網站">
     <meta property="og:image" content="https://i.imgur.com/uZS6w0f.png">
@@ -26,8 +26,18 @@
     <link rel="icon" href="img/yuyu.png" type="image/png" />
     <link rel="shortcut icon" href="img/yuyu.ico" />
 
+    <script>
+        $(window).load(function () {
+            // PAGE IS FULLY LOADED  
+            // FADE OUT YOUR OVERLAYING DIV
+            $('#loading').fadeOut();
+        });
+    </script>
 
 <body>
+    <div id="loading">
+        <img id="loading-image" src="img/loading_animation.gif" alt="Loading..." />
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12" id="middle">
