@@ -61,6 +61,7 @@ body{
     pointer-events: painted;
     border-style: none;
     display: block;
+    letter-spacing: 1px;
 
 }
 .btn-output{
@@ -72,6 +73,7 @@ body{
     pointer-events: painted;
     border-style: none;
     display: block;
+    letter-spacing: 1px;
 }
 
 footer{
