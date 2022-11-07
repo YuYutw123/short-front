@@ -1,32 +1,33 @@
 let userInput = document.getElementById("input-bar");
 let submitBtn = document.querySelector(".btn-input");
-const token = null
-
+const token = null;
 
 async function enterValue(value) {
   let str = {
-    "longUrl": userInput.value
+    longUrl: userInput.value,
   };
   let headers = {
     "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": `Bearer ${token}`,
-}
+    Accept: "application/json",
+    Authorization: `Bearer ${token}`,
+  };
   console.log(str.longUrl);
 
-  fetch ("http://111.251.77.66:5000/api/url/shorten", {
+  fetch("http://104.155.210.72:5000/api/url/shorten", {
     method: "POST",
     headers: headers,
-    body: JSON.stringify(str)
-  }).then(function(response){
-    return response.json();
-  }).then(function(response){
-    let result = document.getElementById('output-bar').value = response.shortUrl;
+    body: JSON.stringify(str),
   })
-  .catch(function(error){
-    console.log('Error during fetch: ' + error.message);
-  });
-
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (response) {
+      let result = (document.getElementById("output-bar").value =
+        response.shortUrl);
+    })
+    .catch(function (error) {
+      console.log("Error during fetch: " + error.message);
+    });
 }
 
 function copyInput() {
